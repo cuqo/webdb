@@ -1,0 +1,680 @@
+/* ---- Dow Standard Stylesheet ---- */
+BODY
+{   MARGIN: 0;
+    FONT-SIZE: 80%;
+    COLOR: #333333;
+    FONT-FAMILY: Arial;
+    BACKGROUND-COLOR: white;
+}
+TD
+{   FONT-WEIGHT: normal;
+    FONT-SIZE: x-small;
+    COLOR: #333333;
+    FONT-FAMILY: Arial;
+}
+TH
+{   FONT-WEIGHT: normal;
+    FONT-SIZE: x-small;
+    COLOR: #333333;
+    FONT-FAMILY: Arial;
+}
+TABLE.TableSmall TD
+{	FONT-SIZE: xx-small;
+    COLOR: #333333;
+    FONT-FAMILY: Arial;
+}
+TABLE.TableSmall TH
+{	FONT-WEIGHT: bold;
+    FONT-SIZE: xx-small;
+    COLOR: #333333;
+    FONT-FAMILY: Arial;
+}
+TABLE.TableLarge TD
+{	FONT-SIZE: small;
+    COLOR: #333333;
+    FONT-FAMILY: Arial;
+}
+TABLE.TableLarge TH
+{	FONT-WEIGHT: bold;
+    FONT-SIZE: small;
+    COLOR: #333333;
+    FONT-FAMILY: Arial;
+}
+TH.CellSmall, TD.CellSmall
+{	FONT-SIZE: xx-small;
+    COLOR: #333333;
+    FONT-FAMILY: Arial;
+}
+TD.CellSmallBold
+{	FONT-WEIGHT: bold;
+    FONT-SIZE: xx-small;
+    COLOR: #333333;
+    FONT-FAMILY: Arial;
+}
+TH.CellLarge, TD.CellLarge
+{	FONT-SIZE: small !important;
+    COLOR: #333333;
+    FONT-FAMILY: Arial;
+}
+.BC										
+{	FONT-SIZE: 85%; 
+	MARGIN-BOTTOM: .7em;
+}
+.CellColorLight
+{	BACKGROUND-COLOR: #cccccc;
+}
+.CellColorLighter
+{	BACKGROUND-COLOR: #dddddd;
+}
+.CellColorLightest
+{ 	BACKGROUND-COLOR: #EEEEEE;
+}
+.CellColorMedium
+{	COLOR: #ffffff;
+    BACKGROUND-COLOR: #999999;
+}
+.CellColorDark
+{	COLOR: #ffffff;
+    BACKGROUND-COLOR: #666666;
+}
+.CellColorDarkest
+{	COLOR: #ffffff;
+    BACKGROUND-COLOR: #333333;
+}
+.CellColorBlack 
+{	background: #000; color: #ffffff;
+}
+.CellColorNone
+{	BACKGROUND-COLOR: #ffffff;
+}
+.CellColorRed
+{   BACKGROUND-COLOR: #ff0000;
+    COLOR: #ffffff;
+}
+.CellColorRed A:link
+{   COLOR: #ffffff;
+    TEXT-DECORATION: underline;
+}
+.CellColorRed A:visited
+{   COLOR: #ffffff;
+    TEXT-DECORATION: underline;
+}
+.CellColorRed A:hover
+{   COLOR: #ffffff;
+    FONT-WEIGHT: bold;
+}
+.CellColorGreen
+{	COLOR: #ffffff;
+	BACKGROUND-COLOR: #009800;
+}
+.CellColorYellow
+{	BACKGROUND-COLOR: yellow;
+}
+span.FontRed, .FontRed
+{	COLOR: #ff0000;
+}
+span.FontRedB, .FontRedB
+{	COLOR: #ff0000;
+    FONT-WEIGHT: BOLD;
+}
+span.FontWhite, .FontWhite
+{	COLOR: #ffffff;
+}
+span.FontWhiteB, .FontWhiteB
+{	COLOR: #ffffff;
+    FONT-WEIGHT: BOLD;
+}
+span.FontDGrey, .FontDGrey
+{	COLOR: #333333;
+}
+span.FontDGreyB, .FontDGreyB
+{	COLOR: #333333;
+    FONT-WEIGHT: BOLD;
+}
+.PageHeader
+{	FONT-WEIGHT: bold;
+    FONT-SIZE: 18px;
+    COLOR: #333333;
+    LINE-HEIGHT: 20px;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    MARGIN-BOTTOM: 1.2em;		
+}
+.Keyword
+{	MARGIN-TOP: -20px;
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 14px;
+    COLOR: #999999;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+}
+.Content
+{	PADDING-LEFT: 20px;
+    PADDING-TOP: 12px;             
+}
+/* default link characteristics */
+.Content A:link
+{	COLOR: #000000;
+}
+.Content A:active
+{	COLOR: #000000;
+}
+.Content A:visited
+{	COLOR: #666666;
+}
+.Content A:hover
+{	COLOR: #ff0000;
+}
+/* make border color on image links behave like text links */
+.Content A:link IMG
+{	BORDER-COLOR: #000000;
+}
+.Content A:active IMG
+{	BORDER-COLOR: #000000;
+}
+.Content A:visited IMG
+{	BORDER-COLOR: #666666;
+}
+.Content A:hover IMG
+{	BORDER-COLOR: #FF0000;
+}
+/* links on red text */
+A.FontRed:link          
+{	COLOR: #FF0000;
+}
+A.FontRed:visited       
+{	COLOR: #FF0000;
+}
+A.FontRed:hover         
+{	COLOR: #000000;
+}
+A.FontRed:active        
+{	COLOR: #FF0000;
+}
+/* links on white text */
+A.FontWhite:link          
+{	COLOR: #FFFFFF;
+}
+A.FontWhite:visited       
+{	COLOR: #FFFFFF;
+}
+A.FontWhite:hover         
+{	COLOR: #000000;
+}
+A.FontWhite:active        
+{	COLOR: #FFFFFF;
+}
+/* for links in area that do not have content style */
+A.Genlink:link          
+{	COLOR: #000000;
+}
+A.Genlink:visited       
+{	COLOR: #666666;
+}
+A.Genlink:hover         
+{	COLOR: #ff0000;
+}
+A.Genlink:active        
+{	COLOR: #000000;
+}
+span.SubTitleLarge, .SubTitleLarge
+{	FONT-WEIGHT: bold;
+    FONT-SIZE: 120%;
+    COLOR: #333333;
+    FONT-FAMILY: Arial;
+}
+span.SubTitleMedium, .SubTitleMedium
+{	FONT-WEIGHT: bold;
+    FONT-SIZE: 110%;
+    COLOR: #333333;
+    FONT-FAMILY: Arial;
+}
+span.SubTitleSmall, .SubTitleSmall
+{	FONT-WEIGHT: bold;
+    FONT-SIZE: 100%;
+    COLOR: #333333;
+    FONT-FAMILY: Arial;
+}
+span.RedSubTitleLarge, .RedSubTitleLarge
+{	FONT-WEIGHT: bold;
+    FONT-SIZE: 120%;
+    COLOR: #ff0000;
+    FONT-FAMILY: Arial;
+}
+span.RedSubTitleMedium, .RedSubTitleMedium
+{	FONT-SIZE: 110%;
+    COLOR: #ff0000;
+    FONT-FAMILY: Arial;
+}
+span.RedSubTitleSmall, .RedSubTitleSmall
+{	FONT-WEIGHT: bold;
+    FONT-SIZE: 100%;
+    COLOR: #ff0000;
+    FONT-FAMILY: Arial;
+}
+HR
+{	COLOR: #999999;
+    HEIGHT: 1px;
+}
+.Float-L 
+{	FLOAT: left; 
+	MARGIN: .5em .6em .5em 0;
+}
+.Float-R
+{	FLOAT: right; 
+	MARGIN: .5em 0 .6em .5em;
+}
+.Pullquote     
+{	BORDER-TOP: thin dotted #222; 
+    BORDER-BOTTOM: thin dotted #222; 
+    PADDING: 12px; 
+    BACKGROUND: #eee;
+    WIDTH: 40%;
+}
+.Pullquote P   
+{	MARGIN: 0 0 .5em 0;
+}
+.footer
+{	PADDING-TOP: 48px;
+    PADDING-LEFT: 20px;
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 70%;
+    COLOR: #666666;
+    FONT-FAMILY: Arial;
+}
+.footer A:link
+{	COLOR: #000000;
+}
+.footer A:active
+{	COLOR: #000000;
+}
+.footer A:visited
+{	COLOR: #666666;
+}
+.footer A:hover
+{	COLOR: #ff0000;
+}
+.ButtonDark
+{	FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    CURSOR: hand;
+    COLOR: #ffffff;
+    FONT-FAMILY: Arial;
+    BACKGROUND-COLOR: #999999;
+}
+.ButtonWhite
+{	FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    CURSOR: hand;
+    COLOR: #333333;
+    FONT-FAMILY: Arial;
+    BACKGROUND-COLOR: #ffffff;
+}
+INPUT.formText
+{   BACKGROUND-COLOR: white;
+    COLOR: #333333;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    FONT-SIZE: 13px;
+}
+H1								
+{	FONT-WEIGHT: BOLD;
+	FONT-SIZE: 135%;
+	FONT-FAMILY: Arial;
+    MARGIN-TOP: 0;
+}
+H2								
+{	FONT-WEIGHT: BOLD;
+	FONT-SIZE: 110%;
+	FONT-FAMILY: Arial;
+    MARGIN-BOTTOM: .4em;
+    MARGIN-TOP: 1.8em;
+}
+H3								
+{	FONT-WEIGHT: BOLD;
+	FONT-SIZE: 100%;
+	FONT-FAMILY: Arial;
+    MARGIN-BOTTOM: .4em;
+    MARGIN-TOP: 1.8em;
+}
+H4								
+{	FONT-WEIGHT: BOLD;
+	FONT-SIZE: 90%;
+	FONT-FAMILY: Arial;
+    MARGIN-BOTTOM: .4em;
+    MARGIN-TOP: 1.8em;  
+}
+H5								
+{	FONT-WEIGHT: BOLD;
+	FONT-SIZE: 80%;
+	FONT-FAMILY: Arial;
+    MARGIN-BOTTOM: .4em;
+    MARGIN-TOP: 1.8em;
+}
+H6								
+{	FONT-WEIGHT: BOLD;
+	FONT-SIZE: 70%;
+	FONT-FAMILY: Arial;
+    MARGIN-BOTTOM: .4em;
+    MARGIN-TOP: 1.8em;
+}
+.Show   
+{ 	DISPLAY: inline;
+}
+.NoShow 
+{ 	DISPLAY: none;
+}
+.In     
+{ 	CURSOR: hand; COLOR: #FF0000; TEXT-DECORATION: underline;
+}
+.Out
+{   CURSOR: hand; COLOR: #000000; TEXT-DECORATION: underline;
+}
+span.Code, .Code                   
+{	FONT-SIZE: 100%; 
+	FONT-FAMILY: "Courier New";
+}
+TD.Code, TH.Code        
+{	FONT-SIZE: 80%;
+	FONT-FAMILY: "Courier New";
+}
+A.Overlib:link          
+{	COLOR: #000;
+	TEXT-DECORATION: none; 
+	BORDER-BOTTOM: 1px dotted #222;
+}
+A.Overlib:visited        
+{	COLOR: #000;
+	TEXT-DECORATION: none; 
+	BORDER-BOTTOM: 1px dotted #222; 
+}
+A.Overlib:hover         
+{	COLOR: #C00; 
+	TEXT-DECORATION: none; 
+	BORDER-BOTTOM: 1px dotted #C00; 
+	CURSOR: help;
+}
+.SmallLink A:link
+{	FONT-SIZE: xx-small;
+    COLOR: #000000;
+    FONT-FAMILY: Arial;
+    TEXT-DECORATION: none;
+}
+.SmallLink A:active
+{	FONT-SIZE: xx-small;
+    COLOR: #000000;
+    FONT-FAMILY: Arial;
+    TEXT-DECORATION: none;
+}
+.SmallLink A:visited
+{	FONT-SIZE: xx-small;
+    COLOR: #666666;
+    FONT-FAMILY: Arial;
+    TEXT-DECORATION: none;
+}
+.SmallLink A:hover
+{	COLOR: #ff0000;
+    TEXT-DECORATION: none;
+}
+TABLE.news
+{	MARGIN: 0 0 .5em .6em;
+}
+TABLE.news TH
+{   FONT-WEIGHT: bold;
+	FONT-SIZE: 70%; 
+	background: #EEEEEE;
+}
+TABLE.news TD
+{   FONT-SIZE: 70%; 
+	BACKGROUND: #FCFCFC;
+}
+TABLE.news P
+{   MARGIN: 0 0 .4em 0;
+}
+.step-action, .step-action TABLE
+{	BORDER-COLLAPSE: collapse; 
+	MARGIN: 0 0 .8em 0;
+	BORDER-COLOR: #333333;
+}
+.step-action TH
+{	FONT-WEIGHT: bold; 
+	BACKGROUND: #EEEEEE;
+	BORDER-COLOR: #333333;
+}
+.step-action TH.CellColorLight
+{	FONT-WEIGHT: bold; 
+	BACKGROUND: #CCC;
+	BORDER-COLOR: #333333;
+}
+.step-action TH.CellColorLighter
+{	FONT-WEIGHT: bold; 
+	BACKGROUND: #DDD;
+	BORDER-COLOR: #333333;
+}
+.step-action TD 
+{	BORDER-COLOR: #333333;
+}
+.step-action P
+{	MARGIN: 0 0 .7em 0;
+}
+TABLE.nested              
+{	BORDER-COLLAPSE: collapse; 
+	MARGIN: 0 0 .8em 0;
+	BORDER-COLOR: #333333;
+}
+TABLE.nested TH           
+{	FONT-WEIGHT: bold;
+	FONT-SIZE: 70%; 
+	BACKGROUND: #EEE;
+	BORDER-COLOR: #333333;
+}
+TABLE.nested TD           
+{	FONT-SIZE: 70%;
+	BORDER-COLOR: #333333;
+}
+TABLE.nested P            
+{	MARGIN: 0 0 .5em 0;
+}
+TEXTAREA, INPUT, LEGEND
+{	COLOR: #333333;
+    FONT-FAMILY: Arial;
+}
+@media screen {
+P.SiteHeader
+{	FILTER: shadow( color=gray, direction=135 );
+}
+
+.SiteHeader
+{	PADDING-LEFT: 10px;
+    FONT-SIZE: 20px;
+    PADDING-BOTTOM: 5px;
+    WIDTH: 100%;
+	COLOR: #ffffff;
+    PADDING-TOP: 5px;
+    FONT-FAMILY: 'Arial Black', 'Swis721 Blk BT', Helvetica, 'Arial Bold';
+    font-smooth: always;
+    moz-opacity: 0.555;
+}
+}
+@media print {
+	.SiteHeader       {FILTER: none; COLOR:#222;}
+	.PageBreakAfter   {page-break-after: always;}
+	.PageBreakBefore  {page-break-before: always;}
+	.content, .footer {padding-left: 0;}
+	span.printLarge {font-size: 1.2em;}
+	h1 {font-size: 2.0em;}
+}
+
+/* ---- EXTENDED CSS  ---- */
+/* ---- Table Formats ---- */
+TABLE.longlist {}
+TABLE.longlist TH                    {border-bottom: 1px solid #aaa; border-top: 1px solid #aaa; background: #eee; font-size: .75em;}
+TABLE.longlist TD                    {border-bottom: 1px solid #ddd; font-size:.75em; padding-left: 5px;}
+TABLE.longlist TH.CellColorLight     {BACKGROUND-COLOR: #cccccc;}
+TABLE.longlist TH.CellColorLighter   {BACKGROUND-COLOR: #dddddd;}
+TABLE.longlist TH.CellColorLightest  {BACKGROUND-COLOR: #EEEEEE;}
+
+TABLE.quote                          {border: 1px solid #999; background: #eee;}
+TABLE.quote TD                       {padding: 8px; font-size: .75em;}
+
+TABLE.FAQ-Q TD                       {padding: 8px 0 8px 0; border-bottom: 1px solid #ddd;}
+TABLE.FAQ-Q A                        {text-decoration: none;}
+TABLE.FAQ-A TH                       {border-top: 2px solid #ddd; border-bottom: 2px solid #DDD; background: #eee;}
+TABLE.FAQ-A TD                       {padding: 8px 12px 30px 16px;}
+TABLE.FAQ-A TABLE TH                 {padding: 4px; border-bottom: 1px solid #222;}
+TABLE.FAQ-A TABLE TD                 {padding: 4px;}
+ 
+/* ---- Text Formats ---- */
+.H15                                 {font-size: 120%; MARGIN-BOTTOM: .4em; MARGIN-TOP: 1.8em;}
+.H25                                 {font-size: 105%; MARGIN-BOTTOM: .4em; MARGIN-TOP: 1.8em;}
+.DYK                                 {position: relative; left: -20px;}
+.DYK TD                              {font-size: 75%;}
+.AllCaps                             {text-transform: uppercase;}
+.SiteTagline                         {margin-right: 24px; margin-top: 6px; color: #ffffff; font: italic bold 1em;}
+BLOCKQUOTE.quote                     {padding: 8px; font-size: .9em; border: 1px solid #999; background: #eee;} /* Also see TABLE.quote */
+
+/* ---- Spacing Control        ---- */
+P, blockquote                        {margin-top: 0; margin-bottom: .9em;}
+
+/* ---- Margin-Top and -Bottom ---- */
+.MT0                                 {margin-top:      0px !important ;}
+.MB0                                 {margin-bottom:   0px !important ;}
+.MT3                                 {margin-top:      3px !important ;}
+.MB3                                 {margin-bottom:   3px !important ;}
+.MT4                                 {margin-top:      4px !important ;}
+.MB4                                 {margin-bottom:   4px !important ;}
+.MT6                                 {margin-top:      6px !important ;}
+.MB6                                 {margin-bottom:   6px !important ;}
+.MT9                                 {margin-top:      9px !important ;}
+.MB9                                 {margin-bottom:   9px !important ;}
+.MT12                                {margin-top:     12px !important ;}
+.MB12                                {margin-bottom:  12px !important ;}
+.MT18                                {margin-top:     18px !important ;}
+.MB18                                {margin-bottom:  18px !important ;}
+.MT24                                {margin-top:     24px !important ;}
+.MB24                                {margin-bottom:  24px !important ;}
+.MT30                                {margin-top:     30px !important ;}
+.MB30                                {margin-bottom:  30px !important ;}
+.MT36                                {margin-top:     36px !important ;}
+.MB36                                {margin-bottom:  36px !important ;}
+.MT48                                {margin-top:     48px !important ;}
+.MB48                                {margin-bottom:  48px !important ;}
+.MT100                               {margin-top:    100px !important ;}
+.MB100                               {margin-bottom: 100px !important ;}
+.MB200                               {margin-bottom: 200px !important ;}
+.MB400                               {margin-bottom: 400px !important ;}
+
+/* ---- Margin-Left and -Right ---- */
+.ML0                                 {margin-left:     0px !important ;}
+.MR0                                 {margin-right:    0px !important ;}
+.ML4                                 {margin-left:     4px !important ;}
+.MR4                                 {margin-right:    4px !important ;}
+.ML8                                 {margin-left:     8px !important ;}
+.MR8                                 {margin-right:    8px !important ;}
+.ML12                                {margin-left:    12px !important ;}
+.MR12                                {margin-right:   12px !important ;}
+.ML18                                {margin-left:    18px !important ;}
+.MR18                                {margin-right:   18px !important ;}
+.ML24                                {margin-left:    24px !important ;}
+.MR24                                {margin-right:   24px !important ;}
+
+/* ---- Padding-Top and -Bottom ---- */
+.pad0                                {padding:         0px !important ;}
+.pad2                                {padding:         2px !important ;}
+.pad4                                {padding:         4px !important ;}
+.pad6                                {padding:         6px !important ;}
+.PT0                                 {padding-top:     0px !important ;}
+.PB0                                 {padding-bottom:  0px !important ;}
+.PT2                                 {padding-top:     2px !important ;}
+.PB2                                 {padding-bottom:  2px !important ;}
+.PT4                                 {padding-top:     4px !important ;}
+.PB4                                 {padding-bottom:  4px !important ;}
+.PT6                                 {padding-top:     6px !important ;}
+.PB6                                 {padding-bottom:  6px !important ;}
+.PB12                                {padding-bottom: 12px !important ;}
+.PB18                                {padding-bottom: 18px !important ;}
+.PB24                                {padding-bottom: 24px !important ;}
+
+/* ---- Padding-Left and -Right ---- */
+.PL0                                 {padding-left:    0px !important ;}
+.PR0                                 {padding-right:   0px !important ;}
+.PL12                                {padding-left:   12px !important ;}
+.PR12                                {padding-right:  12px !important ;}
+.PL18                                {padding-left:   18px !important ;}
+.PR18                                {padding-right:  18px !important ;}
+.PL20                                {padding-left:   20px !important ;}
+.PR20                                {padding-right:  20px !important ;}
+.PL24                                {padding-left:   24px !important ;}
+.PR24                                {padding-right:  24px !important ;}
+.PL30                                {padding-left:   30px !important ;}
+.PR30                                {padding-right:  30px !important ;}
+
+/* ---- Tight ---- */
+.tight                               {margin: 0 !important; padding: 0 !important;}
+.tight-top                           {margin-top: 0 !important; padding-top: 0 !important;}
+.tight-bottom                        {margin-bottom: 0 !important; padding-bottom: 0 !important;}
+
+/* ---- Bullet Spacing ---- */
+UL, OL                               {margin-top: .5em; margin-bottom: .5em;}
+UL UL, UL OL, OL UL, OL OL           {margin-top: 0; margin-bottom: 0;}
+UL.List3  li, OL.List3  li           {margin-top: 3px;}
+UL.List6  li, OL.List6  li           {margin-top: 6px;}
+UL.List9  li, OL.List9  li           {margin-top: 9px;}
+UL.List12 li, OL.List12 li           {margin-top: 12px;}
+OL.COL                               {margin-left: 27px;}
+UL.COL                               {margin-left: 21px;}
+BLOCKQUOTE.COL                       {margin: 8px 20px 8px 21px;}
+BLOCKQUOTE.COL-tight                 {margin: -8px 20px 0px 21px;}
+
+/* ---- Small, Smaller, Smallest ---- */
+span.Small, .Small                   {font-size: 90%;}
+.Small TD, .Small TH                 {font-size: 100%;} 
+TD.Small, TH.Small                   {font-size: 75%;} 
+
+span.Smaller, .Smaller               {font-size: 85%;}
+.Smaller TD,  .Smaller TH            {font-size: 100%;}
+TD.Smaller,   TH.Smaller             {font-size: 70%;}
+
+span.Smallest, .Smallest             {font-size: 75%;} 
+.Smallest TD, .Smallest TH           {font-size: 100%;} 
+TD.Smallest,  TH.Smallest            {font-size: 65%;} 
+ 
+/* ---- Search Box ---- */
+FORM.Search A, FORM.Search INPUT     {font: 85%; margin-right: .1em;}
+
+/* ---- HeaderBorder Variants ---- */
+.BorderFine333                       {BORDER-COLLAPSE: collapse; BORDER-COLOR: #333;}
+.BorderFine333 TD, .BorderFine333 TH {BORDER-COLOR: #333;}
+
+TABLE.HeaderBorder                               {BORDER-BOTTOM: 0; BORDER-TOP: 0; BACKGROUND: #FFF;}
+.HeaderBorder,          TH.HeaderBorder          {BORDER-BOTTOM: 1px solid #CCC; BORDER-TOP: 1px solid #CCC; BACKGROUND: #EEE;}
+.HeaderBorderLightest,  TH.HeaderBorderLightest  {BORDER-BOTTOM: 1px solid #CCC; BORDER-TOP: 1px solid #CCC; BACKGROUND: #EEE;}
+.HeaderBorderLighter,   TH.HeaderBorderLighter   {BORDER-BOTTOM: 1px solid #AAA; BORDER-TOP: 1px solid #AAA; BACKGROUND: #DDD;}
+.HeaderBorderLight,     TH.HeaderBorderLight     {BORDER-BOTTOM: 1px solid #888; BORDER-TOP: 1px solid #888; BACKGROUND: #CCC;}
+
+.HeaderBorderFine1,     TD.HeaderBorderFine1     {BORDER-BOTTOM: 1px solid #ccc;}
+.HeaderBorderFine2,     TD.HeaderBorderFine2     {BORDER-BOTTOM: 2px solid #ccc;}
+.HeaderBorderFineAAA1,  TD.HeaderBorderFineAAA1  {BORDER-BOTTOM: 1px solid #aaa;}
+.HeaderBorderFineAAA2,  TD.HeaderBorderFineAAA2  {BORDER-BOTTOM: 2px solid #aaa;}
+
+.HeaderBorder table  {BORDER-BOTTOM: 1px solid #CCC; BORDER-TOP: 1px solid #CCC; BACKGROUND: #EEE; MARGIN-TOP: 18px; MARGIN-BOTTOM: 8px;}
+.step-action TH.HeaderBorder, .step-action TH.HeaderBorderLight, .step-action TH.HeaderBorderLighter, .step-action TH.HeaderBorderLightest {BORDER-COLOR: #333333;}
+
+/* --- Tag Cloud --- */
+.TC1
+{font-size: 200%;}
+ 
+.TC2
+{font-size: 170%;}
+ 
+.TC3
+{font-size: 130%;}
+ 
+.TC4
+{font-size: 100%;}
+ 
+.TC5
+{font-size: 85%;}
+
+/* WIDE MONITOR FIX */
+TD#MenuCell        {max-width:250px !important;}
+TD#FooterCell      {max-width:250px !important;}
+TD#ContentCell     {width: 90% !important; padding-right: 20px;}
+TD#Footer          {width: 90% !important; padding-right: 20px;}

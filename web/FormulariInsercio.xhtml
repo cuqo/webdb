@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:p="http://primefaces.org/ui">
+    
+<h:head>
+    <title>Formulari</title>
+    <h:outputScript library="js" name="calendar_localization.js" />
+</h:head>
+<h:body>
+    <h:form>
+        <p:panel header="Inserció de persones" style="margin-bottom:10px; background-color: lightblue" >
+            <h:panelGrid columns="2" cellpadding="5">
+                <p:outputLabel for="nif" value="DOW ID: " style="font-weight: bold"/>
+                <p:inputText id="nif" size="9" value="#{controlador.usuariActual.dowId}" />
+                <p:outputLabel for="nom" value="Nom: " style="font-weight: bold"/>
+                <p:inputText id="nom" size="80" value="#{controlador.usuariActual.nombre}" />
+                <p:outputLabel for="nom" value="Cognom: " style="font-weight: bold"/>
+                <p:inputText id="nom" size="80" value="#{controlador.usuariActual.apellidos}" />
+                <p:outputLabel for="datanaixement" value="Vacances: " style="font-weight: bold" />
+                <p:calendar id="datanaixement" pattern="dd/MM/yyyy" placeholder="dd/MM/yyyy" locale="ca" navigator="true" />
+            </h:panelGrid>
+            <p:separator />
+            <h:panelGrid id="panel" columns="2" border="0" cellpadding="10" cellspacing="1">
+                <p:commandButton value="Inserir" action="#{controlador.crearUsuari(controlador.usuariActual.dowId, controlador.usuariActual.nombre, controlador.usuariActual.apellidos)}" icon="ui-icon-check" />
+                <p:commandButton value="Cancel·lar" action="index" icon="ui-icon-cancel" />
+            </h:panelGrid>
+        </p:panel>
+    </h:form>
+</h:body>
+</html>

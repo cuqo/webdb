@@ -1,0 +1,158 @@
+<html>
+
+    <head>
+        <meta name="HTML_Retention_Period_Start_Date" content="10/13/2009">
+        <meta name="HTML_Retention_Review_Frequency" content="">
+        <meta name="HTML_Last_Reviewed_Date" content="">
+        <meta name="HTML_Retention_Start_Date" content="6/13/2006">
+        <meta name="HTML_Initial_Creation_Date" content="10/13/2009 5:29:22 PM">
+        <meta name="HTML_Record_Title_ID" content="72">
+        <meta name="HTML_Information_Classification" content="DOW RESTRICTED - For internal use only">
+        <meta name="HTML_Content_Steward" content="Cherry J nus8033">
+        <title>Dow Header</title>
+
+        <link REL="stylesheet" HREF="hdr_n_nav.css" TYPE="text/css">
+        <link REL="stylesheet" HREF="default.css" TYPE="text/css">
+
+        <style type="text/css">
+            <!--
+            .headerLink_redesign {
+                FONT-WEIGHT: normal;
+                FONT-SIZE: 11px;
+                COLOR: #000000;
+                LINE-HEIGHT: 15px;
+                FONT-FAMILY: Arial
+            }
+            .headerLink_redesign A:link {
+                COLOR: #000000;
+                LINE-HEIGHT: 15px;
+                FONT-FAMILY: Arial
+            }
+            .headerLink_redesign A:visited {
+                COLOR: #333333;
+                LINE-HEIGHT: 15px;
+                FONT-FAMILY: Arial
+            }
+            .headerLink_redesign A:hover {
+                COLOR: #666666;
+                LINE-HEIGHT: 15px;
+                FONT-FAMILY: Arial
+            }
+            -->
+        </style>
+
+
+
+
+    </head>
+
+    <BODY style="margin:0;" onload="form1.k.value = 'Dow Keyword or Search the Intranet';">
+
+        <script language="javascript">
+
+            function Add_Cookie() {
+                var title = prompt("Please enter a title for the site:", "");
+                if ((title == null))
+                {
+                    return 0;
+                } else if ((title == "") || (title == " "))
+                {
+                    alert("Invalid title, please click Add to My Links and specify a title.", "");
+                    return 0;
+                }
+                cookie = document.cookie;
+                links_loc = cookie.indexOf("LINKS=");
+                //set cookie
+
+                var links = "";
+                if (links_loc != -1) {
+                    links_end = cookie.indexOf(";", links_loc);
+                    if (links_end == -1) //if cookie is last in string
+                        links = cookie.substring(links_loc);
+                    else
+                        links = cookie.substring(links_loc, links_end);
+                } else {
+                    links = "LINKS=";
+                }
+                var cookie1 = links + "&" + escape(title) + "$" + escape(document.referrer);
+                document.cookie = cookie1 + ";expires=Fri, 01 Jan 2055 12:00:00 GMT" + ";domain=.intranet.dow.com;path=/";
+                alert("This site has been added to My Links.");
+            }
+
+        </script>
+
+
+
+        <table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td>
+                    <TABLE cellSpacing=0 cellPadding=0 width="100%" style="min-width:800px" bgColor=#ffffff border=0>
+                        <TBODY>
+                            <TR>
+                                <TD width="303"><a href="http://dowhome.intranet.dow.com" target="_top">
+                                        <img src="dow_logo.jpg" alt="Dow Intranet" width="222" height="55" align="left" border="0"></a></TD>
+                                <td  />
+                                <TD valign="bottom">
+                                    <hr width=600 style="color:#FFFFFF" />
+
+
+                                </TD>
+                            </TR>
+                        </TBODY>
+                    </TABLE>
+                    <TABLE cellSpacing=0 cellPadding=0 width="100%" style="min-width:800px" bgColor=#ffffff border=0>
+                        <TR>
+                            <TD background="background_dow.png"><DIV align=left>
+                                    <TABLE border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <TBODY>
+                                            <TR>
+                                                <TD class=headerLink_redesign vAlign=top noWrap width="100%">&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    <A style="position:relative; top:-2px;" class="headerLink_redesign" href="Javascript://" onclick="Add_Cookie();" target="_top">Add to My Links</A> 
+                                            </TR>
+                                        </TBODY>
+                                    </TABLE>
+                                </DIV></TD>
+                            <TD valign="bottom" background="background_dow.png">
+
+                                <div id='searchBoxes'>
+                                    <TABLE height="39" border="0" align="right" cellPadding="0" cellSpacing="0" nowrap>
+                                        <TBODY>
+                                            <TR>
+
+
+
+                                        <FORM id="form1" name="form1" action="http://search.intranet.dow.com/pages/results.aspx" method='get' target='_top'>
+                                            <TD vAlign="center" align="left" class="PT6"><INPUT type=hidden value=k name=camefrom>
+
+                                                <span class="headerLink_redesign" style="font-size:15px; font-family:Arial, sans-serif; position:relative; float:left; font-size:8pt; right:-10px; top:1px; text-align:right;">
+                                                    <a class="headerLink_redesign" href="http://search.intranet.dow.com/" target="_parent">Search Center</a>  |  
+                                                    <a class="headerLink_redesign" target="_parent" href="http://search.intranet.dow.com/information/pages/frequently-asked-questions.aspx">Help/FAQ</a>
+                                                </span>
+
+
+                                                <INPUT type=hidden name=referer>
+                                                <INPUT 
+                                                    onblur="if (k.value == '') {
+                                                                k.value = 'Dow Keyword or Search the Intranet';
+                                                            }" 
+                                                    style="BORDER-RIGHT: 2px inset; BORDER-TOP: 2px inset; PADDING-LEFT: 6px; FONT-WEIGHT: 200; FONT-SIZE: 11px; MARGIN-BOTTOM: 6px; MARGIN-LEFT: 13px; VERTICAL-ALIGN: middle; BORDER-LEFT: 2px inset; LINE-HEIGHT: 11px; BORDER-BOTTOM: 2px inset; FONT-FAMILY: Arial; HEIGHT: 18px; BACKGROUND-COLOR: white" 
+                                                    onfocus="if (k.value == 'Dow Keyword or Search the Intranet') {
+                                                                k.value = '';}" 
+                                                    onclick="if (k.value == 'Dow Keyword or Search the Intranet') {
+                                                                k.value = '';}" 
+                                                    align=absMiddle style='width:210px;' 
+                                                    value="Dow Keyword or Search the Intranet" name='k' height="18">
+                                                <INPUT name=B1 type=submit style="border-style: none; border-color: inherit; border-width: medium; BACKGROUND-IMAGE: url('go.gif'); MARGIN-BOTTOM: 6px; MARGIN-LEFT: 4px; VERTICAL-ALIGN: middle; WIDTH: 40px; CURSOR: hand; HEIGHT: 19px; BACKGROUND-COLOR: #dddddd" value=" " width="40" height="19" onclick="if (k.value == 'Dow Keyword or Search the Intranet') {
+                                                            k.value = '';} document.form1.submit();">
+                                                &nbsp;&nbsp;</TD>
+                                        </FORM>
+                                        </TR>
+                                        </TBODY>
+                                    </TABLE>
+                                </div>
+
+
+                            </TD>
+                        </TR>
+                        </TBODY></TABLE>
+                </td></tr></table>
+    </BODY>
+</html>

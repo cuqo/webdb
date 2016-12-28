@@ -1,0 +1,90 @@
+P.SiteHeader
+{	MARGIN-TOP: 0.2em; 
+	MARGIN-BOTTOM: 0.2em;
+	margin-right: 24px;
+}
+.headerLink {
+	FONT-WEIGHT: normal;
+	FONT-SIZE: 11px;
+	COLOR: #000000;
+	LINE-HEIGHT: 15px;
+	FONT-FAMILY: Arial
+}
+.headerLink A:link {
+	COLOR: #000000;
+	LINE-HEIGHT: 15px;
+	FONT-FAMILY: Arial
+}
+.headerLink A:visited {
+	COLOR: #333333;
+	LINE-HEIGHT: 15px;
+	FONT-FAMILY: Arial
+}
+.headerLink A:hover {
+	COLOR: #666666;
+	LINE-HEIGHT: 15px;
+	FONT-FAMILY: Arial
+}
+.menushow
+{   DISPLAY: inline;
+}
+.menuhead
+{   BACKGROUND-COLOR: #cccccc;
+    DISPLAY: inline;
+}
+.menuheadcell
+{   BORDER-BOTTOM: #dddddd 1px solid;
+    COLOR: black;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    FONT-SIZE: 12px;
+    FONT-WEIGHT: bold;
+    PADDING-BOTTOM: 4px;
+    PADDING-LEFT: 16px;
+    PADDING-TOP: 4px;
+}
+.menuheadcell A:link
+{   COLOR: #333333;
+    TEXT-DECORATION: none;
+}
+.menuheadcell A:visited
+{   COLOR: #333333;
+    TEXT-DECORATION: none;
+}
+.menuheadcell A:hover
+{   COLOR: #ff0000;
+}
+.menuitem
+{   BACKGROUND-COLOR: #EEEEEE;    
+    DISPLAY: none;
+}
+.menuitemcell
+{   BORDER-BOTTOM: #dddddd 1px solid;
+    COLOR: black;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    FONT-SIZE: 11px;
+    FONT-WEIGHT: normal;
+    PADDING-BOTTOM: 4px;
+    PADDING-LEFT: 29px;
+    PADDING-TOP: 4px;
+}
+.menuitemcell A:link
+{   COLOR: #333333;
+    TEXT-DECORATION: none;
+}
+.menuitemcell A:visited
+{   COLOR: #333333;
+    TEXT-DECORATION: none;
+}
+.menuitemcell A:hover
+{   COLOR: #ff0000;
+}
+@media screen 
+{	.DisplayedForPrinting {DISPLAY: none;}
+}
+@media print  
+{	TD#HeaderCell         {DISPLAY: none;}
+	TD#RightMarginCell    {DISPLAY: none;}
+	TD#MenuCell           {DISPLAY: none;}
+	TD#FooterCell         {DISPLAY: none;}
+	.HiddenForPrinting    {DISPLAY: none;}
+}

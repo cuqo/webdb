@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+
+
+    <body>
+        <ui:composition template="template2.xhtml">
+            
+            <ui:define name="body">
+                <h:form>
+                    <p:panel header="Modificació d'usuaris" style="margin-bottom:10px; background-color: #e9e9e9">
+                        <h:panelGrid columns="3" cellpadding="5">
+                            <p:outputLabel for="c1" value="Usuari: " style="font-weight: bold"/>
+                            <p:selectOneMenu id="c1" value="#{controlador.usuariActual.dowId}" style="width:300px">
+                                <f:selectItem itemLabel="-- Selecciona un usuari --" itemValue="" noSelectionOption="true" />
+                                <f:selectItems value="#{controlador.llistarUsuarios()}" var="usuari" itemLabel="#{usuari.dowId}" itemValue="#{usuari.dowId}"/>
+                            </p:selectOneMenu>
+                            <p:commandButton value="Modificar" action="#{controlador.obtenirUsuariModificacio(controlador.usuariActual.dowId)}" icon="ui-icon-pencil" />
+                        </h:panelGrid>
+                        <p:separator />
+                        <p:commandButton value="Tornar" action="index2" icon="ui-icon-arrowthick-1-w" />
+                    </p:panel>
+                </h:form>
+            </ui:define>
+        </ui:composition>
+    </body>
+</html>

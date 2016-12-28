@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+
+    <body>
+
+        <ui:composition template="template1.xhtml">
+
+            <ui:define name="title">
+                <h1>Welcome <span id="welcome"></span>,</h1><br />
+            </ui:define>
+
+            <ui:define name="keyword">
+                <p class="Keyword">Dow Keyword: Holiday Manager </p>                
+            </ui:define>
+
+            <ui:define name="body">
+                <h:form>
+                    <p:menubar>
+                        <p:submenu label="Usuarios">
+                            <p:menuitem value="Llistar tots els usuaris" action="Llistar" />
+                            <p:menuitem value="Inserir usuari" action="#{controlador.prepararInsercio()}" />
+                            <p:menuitem value="Consultar usuaris" action="SeleccioConsulta" />
+                            <p:menuitem value="Modificar usuaris" action="SeleccioModificacio" />
+                            <p:menuitem value="Eliminar usuaris" action="SeleccioEliminacio" />
+                        </p:submenu>
+                    </p:menubar>
+                </h:form>
+            </ui:define>
+
+        </ui:composition>
+
+    </body>
+</html>
