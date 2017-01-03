@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <body>
+
+        <ui:composition template="./template2.xhtml">
+
+            <ui:define name="body">
+                <h:form>
+                    <p:panel header="Valors de l'usuari" style="margin-bottom:10px; background-color: #e9e9e9" >
+                        <h:panelGrid columns="2" cellpadding="5">
+                            <p:outputLabel value="DOW ID: " style="font-weight: bold" />
+                            <p:outputLabel value="#{usuariosControlador.usuariActual.dowId}" style="color: red; font-weight: bold"/>
+
+                            <p:outputLabel value="Nom: " style="font-weight: bold"/>
+                            <p:outputLabel value="#{usuariosControlador.usuariActual.nombre}" />
+
+                            <p:outputLabel value="Cognom: " style="font-weight: bold"/>
+                            <p:outputLabel value="#{usuariosControlador.usuariActual.apellidos}" />                
+
+                            <p:outputLabel value="Planta: " style="font-weight: bold"/>
+                            <p:outputLabel value="#{usuariosControlador.usuariActual.planta}" />
+
+                            <p:outputLabel value="Localització: " style="font-weight: bold"/>
+                            <p:outputLabel value="#{usuariosControlador.usuariActual.localizacion}" />
+
+                            <p:outputLabel value="Vacances pendents: " style="font-weight: bold"/>
+                            <p:outputLabel value="#{usuariosControlador.usuariActual.vacacionesPendientes}" />
+
+                            <p:outputLabel value="Vacances pendents arrossegades: " style="font-weight: bold"/>
+                            <p:outputLabel value="#{usuariosControlador.usuariActual.vacacionesPendientesArrastradas}" />
+
+                            <p:outputLabel value="Vacances disfrutades: " style="font-weight: bold"/>
+                            <p:outputLabel value="#{usuariosControlador.usuariActual.vacacionesDisfrutadas}" />
+                        </h:panelGrid>
+                        <p:separator />
+                        <h:panelGrid id="panel" columns="3" border="0" cellpadding="10" cellspacing="1">
+<!--                            <p:commandButton value="Eliminar"  icon="ui-icon-check" />-->
+                            <p:commandButton value="Eliminar" action="#{usuariosControlador.eliminarUsuari(usuariosControlador.usuariActual.dowId)}"  icon="ui-icon-check">
+                                <p:confirm header="Eliminar" message="Segur que vols eliminar l'usuari?" icon="ui-icon-alert" />
+                            </p:commandButton>
+
+                            <p:confirmDialog global="true" showEffect="fade" hideEffect="fade">
+                                <p:commandButton value="Sí" type="button"  styleClass="ui-confirmdialog-yes" icon="ui-icon-check" />
+                                <p:commandButton value="No" type="button" styleClass="ui-confirmdialog-no" icon="ui-icon-close" />
+                            </p:confirmDialog>
+                            <p:commandButton value="Cancel·lar" action="SeleccioEliminacio" icon="ui-icon-cancel" />
+                        </h:panelGrid>
+                    </p:panel>
+                </h:form>
+            </ui:define>
+
+        </ui:composition>
+
+    </body>
+</html>

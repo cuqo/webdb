@@ -17,19 +17,19 @@
                     <p:panel header="Inserció d'usuaris" style="margin-bottom:10px; background-color: #e2e2e2; font-size: 16px" >
                         <h:panelGrid columns="2" cellpadding="5" style="font-size: 14px">
                             <p:outputLabel for="dowId" value="DOW ID: " style="font-weight: bold; font-size: 14px"/>
-                            <p:inputText id="dowId" size="9" value="#{controlador.usuariActual.dowId}" style="font-size: 14px" />
+                            <p:inputText id="dowId" size="9" value="#{usuariosControlador.usuariActual.dowId}" style="font-size: 14px" />
                             <p:outputLabel for="nom" value="Nom: " style="font-weight: bold; font-size: 14px"/>
-                            <p:inputText id="nom" size="80" value="#{controlador.usuariActual.nombre}" style="font-size: 14px"/>
+                            <p:inputText id="nom" size="80" value="#{usuariosControlador.usuariActual.nombre}" style="font-size: 14px"/>
                             <p:outputLabel for="cognom" value="Cognom: " style="font-weight: bold; font-size: 14px" />
-                            <p:inputText id="cognom" size="80" value="#{controlador.usuariActual.apellidos}" style="font-size: 14px"/>
+                            <p:inputText id="cognom" size="80" value="#{usuariosControlador.usuariActual.apellidos}" style="font-size: 14px"/>
                             <p:outputLabel for="localitzacio" value="Localització: " style="font-weight: bold; font-size: 14px"/>
-                            <p:selectOneMenu id="localitzacio" value="#{controlador.usuariActual.localizacion}" style="font-size: 14px" onchange="changeDept()">
+                            <p:selectOneMenu id="localitzacio" value="#{usuariosControlador.usuariActual.localizacion}" style="font-size: 14px" onchange="changeDept()">
                                 <f:selectItem itemLabel="-- Select One --" itemValue="" noSelectionOption="true"/>
                                 <f:selectItem itemLabel="DOW NORTH" itemValue="North" />
                                 <f:selectItem itemLabel="DOW SOUTH" itemValue="South" />
                             </p:selectOneMenu>
                             <p:outputLabel for="planta" value="Planta: " style="font-weight: bold; font-size: 14px"/>
-                            <p:selectOneMenu id="planta" value="#{controlador.usuariActual.planta}" style="font-size: 14px">
+                            <p:selectOneMenu id="planta" value="#{usuariosControlador.usuariActual.planta}" style="font-size: 14px">
                                 <f:selectItem itemLabel="-- Select One --" itemValue="" noSelectionOption="true"/>
                                 <f:selectItem itemLabel="Cracker" itemValue="North" />
                                 <f:selectItem itemLabel="Octene" itemValue="South" />
@@ -49,7 +49,7 @@
                         </h:panelGrid>
                         <p:separator />
                         <h:panelGrid id="panel" columns="2" border="0" cellpadding="10" cellspacing="1">
-                            <p:commandButton value="Inserir" action="#{controlador.crearUsuari(controlador.usuariActual.dowId, controlador.usuariActual.nombre, controlador.usuariActual.apellidos)}" icon="ui-icon-check" />
+                            <p:commandButton value="Inserir" action="#{usuariosControlador.crearUsuari(usuariosControlador.usuariActual.dowId, usuariosControlador.usuariActual.nombre, usuariosControlador.usuariActual.apellidos)}" icon="ui-icon-check" />
                             <p:commandButton value="Cancel·lar" action="index2" icon="ui-icon-cancel" />
                         </h:panelGrid>
                     </p:panel>

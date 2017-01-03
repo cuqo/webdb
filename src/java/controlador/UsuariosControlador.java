@@ -24,9 +24,9 @@ import servei.IUsuariosServei;
  *
  * @author ND17613
  */
-@Named(value="controlador")
+@Named(value="usuariosControlador")
 @SessionScoped
-public class Controlador implements Serializable{
+public class UsuariosControlador implements Serializable{
     @Inject
     private UsuariosDTO usuariActual;
     
@@ -61,7 +61,7 @@ public class Controlador implements Serializable{
     public String crearUsuari(String dowId, String nom, String cognom) {
         Usuarios usuari = new Usuarios(dowId, nom, cognom);
         serveiUsuari.inserirUsuari(usuari);
-        return "Index2";
+        return "index2";
     }
 
     public String obtenirUsuariConsulta(String dowId) {
@@ -86,12 +86,12 @@ public class Controlador implements Serializable{
         Usuarios usuari = serveiUsuari.obtenirUsuari(dowId);
         passarUsuariosDTOUsuarios(usuari);
         serveiUsuari.modificarUsuari(usuari);
-        return "Index2";
+        return "index2";
     }
 
     public String eliminarUsuari(String dowId) {
         serveiUsuari.eliminarUsuari(dowId);
-        return "index";
+        return "index2";
     }
     
     //Mètodes privats

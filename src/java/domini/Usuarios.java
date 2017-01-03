@@ -6,12 +6,15 @@
 package domini;
 
 import java.io.Serializable;
+import java.util.List;
 import javax.persistence.Basic;
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
@@ -71,6 +74,8 @@ public class Usuarios implements Serializable {
     private String funcion;
     @Column(name = "Vacaciones")
     private Double vacaciones;
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "usuarios")
+    private List<Vacaciones> vacacionesList;
 
     public Usuarios() {
     }
@@ -83,7 +88,7 @@ public class Usuarios implements Serializable {
         this.dowId = dowId;
         this.nombre = nombre;
         this.apellidos = apellidos;
-    }    
+    }
 
     public String getDowId() {
         return dowId;
@@ -171,6 +176,14 @@ public class Usuarios implements Serializable {
 
     public void setVacaciones(Double vacaciones) {
         this.vacaciones = vacaciones;
+    }
+
+    public List<Vacaciones> getVacacionesList() {
+        return vacacionesList;
+    }
+
+    public void setVacacionesList(List<Vacaciones> vacacionesList) {
+        this.vacacionesList = vacacionesList;
     }
 
     @Override

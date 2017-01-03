@@ -11,7 +11,7 @@
             <ui:define name="body">
                 <h:form>
                     <p:panel header="Llistar tots els usuaris" style="margin-bottom:10px; background-color: #e9e9e9" >
-                        <p:dataTable var="usuari" value="#{controlador.llistarUsuarios()}" rows="10"
+                        <p:dataTable var="usuari" value="#{usuariosControlador.llistarUsuarios()}" rows="10"
                                      paginator="true"
                                      paginatorTemplate="{FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}"
                                      rowsPerPageTemplate="5,10,15,20">
