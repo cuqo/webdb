@@ -89,10 +89,10 @@ public class UsuariosControlador implements Serializable{
         return "index2";
     }
 
-    public String eliminarUsuari(String dowId) {
+   public String eliminarUsuari(String dowId) {        
         serveiUsuari.eliminarUsuari(dowId);
         return "index2";
-    }
+    }  
     
     //Mètodes privats
     private void passarUsuariosUsuariosDTO(Usuarios usuari) {

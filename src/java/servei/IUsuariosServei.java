@@ -17,5 +17,6 @@ public interface IUsuariosServei {
     public void inserirUsuari(Usuarios usuari);
     public Usuarios obtenirUsuari(String dowId);
     public void modificarUsuari(Usuarios usuari);
+//    public void eliminarUsuari(Usuarios usuari);
     public void eliminarUsuari(String dowId);
 }

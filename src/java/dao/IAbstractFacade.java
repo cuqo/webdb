@@ -10,6 +10,7 @@ import java.util.List;
 /**
  *
  * @author ND17613
+ * @param <T>
  */
 public interface IAbstractFacade<T> {
     public void create(T entity);

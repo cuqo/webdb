@@ -21,10 +21,11 @@ import javax.transaction.Transactional;
 @Named
 @SessionScoped
 public class UsuariosServei implements IUsuariosServei, Serializable{
+    
     @Inject
     private IUsuariosFacade usuariDao;
 
-    @Transactional
+    @Transactional 
     @Override
     public List<Usuarios> llistarUsuaris() {
         return usuariDao.findAll();
@@ -53,7 +54,5 @@ public class UsuariosServei implements IUsuariosServei, Serializable{
     public void eliminarUsuari(String dowId) {
         usuariDao.remove(usuariDao.find(dowId));
     }
-
-    
     
 }
