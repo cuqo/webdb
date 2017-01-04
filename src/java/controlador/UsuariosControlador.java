@@ -58,8 +58,8 @@ public class UsuariosControlador implements Serializable{
         return "FormulariInsercio";
     }
 
-    public String crearUsuari(String dowId, String nom, String cognom) {
-        Usuarios usuari = new Usuarios(dowId, nom, cognom);
+    public String crearUsuari(String dowId, String nom, String cognom, String departament, String planta, String localitzacio, String funcio) {
+        Usuarios usuari = new Usuarios(dowId, nom, cognom, departament, planta, localitzacio, funcio);
         serveiUsuari.inserirUsuari(usuari);
         return "index2";
     }
@@ -99,8 +99,10 @@ public class UsuariosControlador implements Serializable{
         usuariActual.setDowId(usuari.getDowId());
         usuariActual.setNombre(usuari.getNombre());
         usuariActual.setApellidos(usuari.getApellidos());
+        usuariActual.setDepartamento(usuari.getDepartamento());
         usuariActual.setPlanta(usuari.getPlanta());
         usuariActual.setLocalizacion(usuari.getLocalizacion());
+        usuariActual.setFuncion(usuari.getFuncion());
         usuariActual.setVacacionesPendientes(usuari.getVacacionesPendientes());
         usuariActual.setVacacionesPendientesArrastradas(usuari.getVacacionesPendientesArrastradas());
         usuariActual.setVacacionesDisfrutadas(usuari.getVacacionesDisfrutadas());
@@ -110,12 +112,20 @@ public class UsuariosControlador implements Serializable{
         usuari.setDowId(usuariActual.getDowId());
         usuari.setNombre(usuariActual.getNombre());
         usuari.setApellidos(usuariActual.getApellidos());
+        usuari.setDepartamento(usuariActual.getDepartamento());
+        usuari.setPlanta(usuariActual.getPlanta());
+        usuari.setLocalizacion(usuariActual.getLocalizacion());
+        usuari.setFuncion(usuariActual.getFuncion());                
     }
 
     private void netejarFormulari() {
         usuariActual.setDowId(null);
         usuariActual.setNombre(null);
-        usuariActual.setApellidos(null);        
+        usuariActual.setApellidos(null);
+        usuariActual.setDepartamento(null);
+        usuariActual.setPlanta(null);
+        usuariActual.setLocalizacion(null);
+        usuariActual.setFuncion(null);        
     }
     
 }

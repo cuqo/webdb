@@ -23,7 +23,7 @@
                             <p:outputLabel for="cognom" value="Cognom: " style="font-weight: bold; font-size: 14px" />
                             <p:inputText id="cognom" size="80" value="#{usuariosControlador.usuariActual.apellidos}" style="font-size: 14px"/>
                             <p:outputLabel for="localitzacio" value="Localització: " style="font-weight: bold; font-size: 14px"/>
-                            <p:selectOneMenu id="localitzacio" value="#{usuariosControlador.usuariActual.localizacion}" style="font-size: 14px" onchange="changeDept()">
+                            <p:selectOneMenu id="localitzacio" value="#{usuariosControlador.usuariActual.localizacion}" style="font-size: 14px">
                                 <f:selectItem itemLabel="-- Select One --" itemValue="" noSelectionOption="true"/>
                                 <f:selectItem itemLabel="DOW NORTH" itemValue="North" />
                                 <f:selectItem itemLabel="DOW SOUTH" itemValue="South" />
@@ -31,9 +31,18 @@
                             <p:outputLabel for="planta" value="Planta: " style="font-weight: bold; font-size: 14px"/>
                             <p:selectOneMenu id="planta" value="#{usuariosControlador.usuariActual.planta}" style="font-size: 14px">
                                 <f:selectItem itemLabel="-- Select One --" itemValue="" noSelectionOption="true"/>
-                                <f:selectItem itemLabel="Cracker" itemValue="North" />
-                                <f:selectItem itemLabel="Octene" itemValue="South" />
+                                <f:selectItem itemLabel="Cracker" itemValue="Cracker" />
+                                <f:selectItem itemLabel="Octene" itemValue="Octeno" />
                             </p:selectOneMenu>
+                            <p:outputLabel for="departament" value="Departament: " style="font-weight: bold; font-size: 14px" />
+                            <p:selectOneMenu id="departament" value="#{usuariosControlador.usuariActual.departamento}" style="font-size: 14px" >
+                                <f:selectItem itemLabel="-- Select One --" itemValue="" noSelectionOption="true"/>
+                                <f:selectItem itemLabel="Producció" itemValue="Produccio" />
+                                <f:selectItem itemLabel="Departament 2" itemValue="Departament 2" />
+                            </p:selectOneMenu>         
+                            <p:outputLabel for="funcio" value="Funció: " style="font-weight: bold; font-size: 14px"/>
+                            <p:inputText id="funcio" size="9" value="#{usuariosControlador.usuariActual.funcion}" style="font-size: 14px" />
+                           
 
                             <script>
                                 function changeDept() {
@@ -49,7 +58,7 @@
                         </h:panelGrid>
                         <p:separator />
                         <h:panelGrid id="panel" columns="2" border="0" cellpadding="10" cellspacing="1">
-                            <p:commandButton value="Inserir" action="#{usuariosControlador.crearUsuari(usuariosControlador.usuariActual.dowId, usuariosControlador.usuariActual.nombre, usuariosControlador.usuariActual.apellidos)}" icon="ui-icon-check" />
+                            <p:commandButton value="Inserir" action="#{usuariosControlador.crearUsuari(usuariosControlador.usuariActual.dowId, usuariosControlador.usuariActual.nombre, usuariosControlador.usuariActual.apellidos, usuariosControlador.usuariActual.departamento,usuariosControlador.usuariActual.planta, usuariosControlador.usuariActual.localizacion, usuariosControlador.usuariActual.funcion)}" icon="ui-icon-check" />
                             <p:commandButton value="Cancel·lar" action="index2" icon="ui-icon-cancel" />
                         </h:panelGrid>
                     </p:panel>

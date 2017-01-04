@@ -84,11 +84,15 @@ public class Usuarios implements Serializable {
         this.dowId = dowId;
     }
 
-    public Usuarios(String dowId, String nombre, String apellidos) {
+    public Usuarios(String dowId, String nombre, String apellidos, String departamento, String planta, String localizacion, String funcion) {
         this.dowId = dowId;
         this.nombre = nombre;
         this.apellidos = apellidos;
-    }
+        this.departamento = departamento;
+        this.planta = planta;
+        this.localizacion = localizacion;
+        this.funcion = funcion;
+    }    
 
     public String getDowId() {
         return dowId;
