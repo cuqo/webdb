@@ -26,6 +26,7 @@ public class MenuBean implements Serializable {
 
     private String selectedLocalitzacio;
     private String selectedPlanta;
+    private String selectedDepartament;
 
     public String getSelectedPlanta() {
         return selectedPlanta;
@@ -34,7 +35,6 @@ public class MenuBean implements Serializable {
     public void setSelectedPlanta(String selectedPlanta) {
         this.selectedPlanta = selectedPlanta;
     }
-    
 
     public String getSelectedLocalitzacio() {
         return selectedLocalitzacio;
@@ -44,6 +44,15 @@ public class MenuBean implements Serializable {
         this.selectedLocalitzacio = selectedLocalitzacio;
     }
 
+    public String getSelectedDepartament() {
+        return selectedDepartament;
+    }
+
+    public void setSelectedDepartament(String selectedDepartament) {
+        this.selectedDepartament = selectedDepartament;
+    }
+    
+
     public String[] getLocalitzacio() {
         return new String[]{"Selecciona una opció", "DOW NORTH", "DOW SOUTH"};
     }
@@ -51,27 +60,27 @@ public class MenuBean implements Serializable {
     public String[] getPlanta() {
         if (selectedLocalitzacio != null && selectedLocalitzacio.equals("Selecciona una opció")) {
             return new String[]{"Selecciona una localització"};
-        } else if (selectedLocalitzacio != null && selectedLocalitzacio.equals("DOW NORTH")) {
-            return new String[]{"Selecciona una planta","Cracker", "Octè"};
-        } else if(selectedLocalitzacio != null && selectedLocalitzacio.equals("DOW SOUTH")){
-            return new String[]{"Selecciona una planta","Planta 1", "Planta 2"};
-        }else{
+        } else if (selectedLocalitzacio != null && selectedLocalitzacio.equals("DOW NORTH")) {            
+            return new String[]{"Selecciona una planta", "Cracker", "Octè"};
+        } else if (selectedLocalitzacio != null && selectedLocalitzacio.equals("DOW SOUTH")) {
+            return new String[]{"Selecciona una planta", "Planta 1", "Planta 2"};
+        } else {
             return new String[]{"Selecciona una localització"};
         }
     }
-    
-    public String[] getDepartament(){
-        if (selectedPlanta != null && selectedPlanta.equals("Selecciona una localització")) {
+
+    public String[] getDepartament() {
+        if (selectedLocalitzacio != null && selectedPlanta != null && selectedPlanta.equals("Selecciona una localització")) {
             return new String[]{"Selecciona una planta"};
-        } else if (selectedPlanta != null && selectedPlanta.equals("Cracker")) {
-            return new String[]{"Selecciona un departament","Departament 1", "Departament 2"};
-        } else if(selectedPlanta != null && selectedPlanta.equals("Octè")){
-            return new String[]{"Selecciona un departament","Departament 3", "Departament 4"};
-        }else if(selectedPlanta != null && selectedPlanta.equals("Planta 1")){
-            return new String[]{"Selecciona un departament","Departament 5", "Departament 6"};
-        }else if(selectedPlanta != null && selectedPlanta.equals("Planta 2")){
-            return new String[]{"Selecciona un departament","Departament 7", "Departament 8"};
-        }else{
+        } else if (selectedLocalitzacio != null && selectedLocalitzacio.equals("DOW NORTH") && selectedPlanta != null && selectedPlanta.equals("Cracker")) {
+            return new String[]{"Selecciona un departament", "Departament 1", "Departament 2"};
+        } else if (selectedLocalitzacio != null && selectedLocalitzacio.equals("DOW NORTH") && selectedPlanta != null && selectedPlanta.equals("Octè")) {
+            return new String[]{"Selecciona un departament", "Departament 3", "Departament 4"};
+        } else if (selectedLocalitzacio != null && selectedLocalitzacio.equals("DOW SOUTH") && selectedPlanta != null && selectedPlanta.equals("Planta 1")) {
+            return new String[]{"Selecciona un departament", "Departament 5", "Departament 6"};
+        } else if (selectedLocalitzacio != null && selectedLocalitzacio.equals("DOW SOUTH") && selectedPlanta != null && selectedPlanta.equals("Planta 2")) {
+            return new String[]{"Selecciona un departament", "Departament 7", "Departament 8"};
+        } else {
             return new String[]{"Selecciona una planta"};
         }
     }

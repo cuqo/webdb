@@ -26,17 +26,17 @@
                             <p:outputLabel for="localitzacio" value="Localització: " style="font-weight: bold; font-size: 14px"/>
                             <p:selectOneMenu id="localitzacio" value="#{menuBean.selectedLocalitzacio}" style="font-size: 14px">
                                 <f:selectItems id="opcionsLocalitzacio" value="#{menuBean.localitzacio}"/>
-                                <p:ajax  update="planta" event="change" immediate="true"/>                                
+                                <p:ajax  update="planta" event="change" immediate="true" process="localitzacio"/>                                
                             </p:selectOneMenu>                            
 
                             <p:outputLabel for="planta" value="Planta: " style="font-weight: bold; font-size: 14px"/>
                             <p:selectOneMenu id="planta" value="#{menuBean.selectedPlanta}" style="font-size: 14px" >
                                 <f:selectItems id="opcionsPlanta" value="#{menuBean.planta}"/>
-                                <p:ajax  update="departament" event="change" immediate="true"/>                                
+                                <p:ajax  update="departament" event="change" immediate="true" process="planta"/>                                
                             </p:selectOneMenu>
 
                             <p:outputLabel for="departament" value="Departament: " style="font-weight: bold; font-size: 14px" />
-                            <p:selectOneMenu id="departament" value="#{usuariosControlador.usuariActual.departamento}" style="font-size: 14px">
+                            <p:selectOneMenu id="departament" value="#{menuBean.selectedDepartament}" style="font-size: 14px">
                                 <f:selectItems id="opcionsDepartament" value="#{menuBean.departament}"/>
                             </p:selectOneMenu>
 
