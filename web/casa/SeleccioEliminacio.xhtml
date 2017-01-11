@@ -17,7 +17,7 @@
                             <p:outputLabel for="c1" value="DOW ID: " style="font-weight: bold"/>
                             <p:selectOneMenu id="c1" value="#{usuariosControlador.usuariActual.dowId}" style="width:300px">
                                 <f:selectItem itemLabel="-- Selecciona un usuari --" itemValue="" noSelectionOption="true" />
-                                <f:selectItems value="#{usuariosControlador.llistarUsuarios()}" var="usuari" itemLabel="#{usuari.dowId}" itemValue="#{usuari.dowId}"/>
+                                <f:selectItems value="#{usuariosControlador.llistarUsuarios()}" var="usuari" itemLabel="#{usuari.apellidos}, #{usuari.nombre}" itemValue="#{usuari.dowId}"/>
                             </p:selectOneMenu>
                             <p:commandButton value="Eliminar" action="#{usuariosControlador.obtenirUsuariEliminacio(usuariosControlador.usuariActual.dowId)}" icon="ui-icon-trash" />
                         </h:panelGrid>

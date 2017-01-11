@@ -6,11 +6,13 @@
 package dto;
 
 import domini.Usuarios;
+import javax.enterprise.context.RequestScoped;
 
 /**
  *
  * @author ND17613
  */
+@RequestScoped
 public class VacacionesDTO {
     protected VacacionesPKDTO vacacionesPK;    
     private Boolean medioDia;    

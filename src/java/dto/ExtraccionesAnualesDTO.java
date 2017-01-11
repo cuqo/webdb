@@ -5,12 +5,15 @@
  */
 package dto;
 
+import javax.enterprise.context.RequestScoped;
+
 
 
 /**
  *
  * @author ND17613
  */
+@RequestScoped
 public class ExtraccionesAnualesDTO {
     protected ExtraccionesAnualesPKDTO extraccionesAnualesPK;    
     private String fechaExtraccion;     

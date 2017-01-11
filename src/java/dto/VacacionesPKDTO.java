@@ -5,10 +5,13 @@
  */
 package dto;
 
+import javax.enterprise.context.RequestScoped;
+
 /**
  *
  * @author ND17613
  */
+@RequestScoped
 public class VacacionesPKDTO {
     private String dowId;    
     private int dia;    
