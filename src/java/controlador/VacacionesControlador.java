@@ -5,6 +5,7 @@
  */
 package controlador;
 
+import domini.Usuarios;
 import java.io.Serializable;
 import javax.enterprise.context.SessionScoped;
 import javax.inject.Inject;
@@ -12,22 +13,30 @@ import javax.inject.Named;
 import servei.IVacacionesServei;
 import dto.VacacionesDTO;
 import dto.VacacionesPKDTO;
+import java.util.Map;
+import javax.faces.context.FacesContext;
+import javax.servlet.http.Cookie;
+import servei.IUsuariosServei;
 
 /**
  *
  * @author ND17613
  */
-@Named(value="vacacionesControlador")
+@Named(value = "vacacionesControlador")
 @SessionScoped
-public class VacacionesControlador implements Serializable{
+public class VacacionesControlador implements Serializable {
+
     @Inject
     private VacacionesDTO vacancesActual;
-    
+
     @Inject
     private VacacionesPKDTO vacancesPKActual;
-    
+
     @Inject
     private IVacacionesServei serveiVacances;
+
+    @Inject
+    private IUsuariosServei serveiUsuari;
 
     public VacacionesDTO getVacancesActual() {
         return vacancesActual;
@@ -44,16 +53,25 @@ public class VacacionesControlador implements Serializable{
     public void setServeiVacances(IVacacionesServei serveiVacances) {
         this.serveiVacances = serveiVacances;
     }
-    
+
     public String prepararInsercio() {
         netejarFormulari();
         return "FormulariInsercio";
     }
-    
+
     private void netejarFormulari() {
-        vacancesActual.setMedioDia(null);
-        vacancesActual.setUsuarios(null);
+        Map<String, Object> cookies = FacesContext.getCurrentInstance().getExternalContext().getRequestCookieMap();
+        Cookie cookie = (Cookie) cookies.get("dowid");
+        String dowid = cookie.getValue();
+        Usuarios usuari = serveiUsuari.obtenirUsuari(dowid);
+        
         vacancesPKActual.setAño(0);
+        vacancesPKActual.setDia(0);
+        vacancesPKActual.setDowId(dowid);
+        vacancesPKActual.setMes(0);
+        vacancesActual.setUsuarios(usuari);
+        vacancesActual.setMedioDia(null);
+        vacancesActual.setVacacionesPK(vacancesPKActual);       
     }
-    
+
 }

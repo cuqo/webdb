@@ -87,8 +87,12 @@
                         xmlDoc = xmlhttp.responseXML;
                         document.getElementById("welcome").innerHTML =
                                 xmlDoc.getElementsByTagName("givenName")[0].childNodes[0].nodeValue + " " + xmlDoc.getElementsByTagName("sn")[0].childNodes[0].nodeValue;
+                        var dowId = xmlDoc.getElementsByTagName("uid")[0].childNodes[0].nodeValue;
+                        document.cookie ="dowid=" +dowId +";";
+                        var x = document.cookie;
+                        window.alert(x);
                     </script>
-
+                    <p></p>
 
                     <p>&nbsp;</p>
                 </td>
