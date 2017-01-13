@@ -56,7 +56,7 @@ public class VacacionesControlador implements Serializable {
 
     public String prepararInsercio() {
         netejarFormulari();
-        return "FormulariInsercio";
+        return "InserirVacances";
     }
 
     private void netejarFormulari() {
