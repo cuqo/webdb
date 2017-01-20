@@ -7,6 +7,7 @@
       xmlns:f="http://xmlns.jcp.org/jsf/core">
 
     <h:head>
+        
         <!--<h:outputScript library="js" name="calendar_localization.js" />-->
     </h:head>
     <body>
@@ -20,6 +21,17 @@
                             <p:calendar id="inici" size="9"  style="font-size: 14px" pattern="dd/MM/yyyy" placeholder="dd/MM/yyyy" locale="ca" navigator="true" />
                             <p:outputLabel for="final" value="Dia de fi: " style="font-weight: bold; font-size: 14px"/>
                             <p:calendar id="final" size="9"  style="font-size: 14px" pattern="dd/MM/yyyy" placeholder="dd/MM/yyyy" locale="ca" navigator="true" />
+
+
+                            <p:outputLabel for="migDia" value="Mig dia: " style="font-weight: bold; font-size: 14px"/>
+                            <h:panelGroup>
+                                <p:selectBooleanButton id="migDia" onLabel="Sí" offLabel="No" style="width:60px" />
+
+                                <p:outputLabel id="fade" >
+                                    <i class="fa fa-info-circle"></i>
+                                </p:outputLabel>
+                                <p:tooltip id="toolTipFade" for="fade" value="Al seleccionar, tots els dies es consideren mitjos." />
+                            </h:panelGroup>
                         </h:panelGrid>
                         <p:separator />
                         <h:panelGrid id="panel" columns="2" border="0" cellpadding="10" cellspacing="1">
